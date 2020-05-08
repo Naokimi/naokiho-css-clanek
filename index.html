@@ -1,0 +1,1135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>D20 v kostce - Články - Generátor náhodných předmětů</title>
+
+
+<link rel="stylesheet" href="/js/lightbox/css/lightbox.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="/js/lightbox/prototype.js"></script>
+<script type="text/javascript" src="/js/lightbox/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="/js/lightbox/lightbox.js"></script>
+
+<link charset="utf-8" lang="cs" type="text/css" href="/styly/office/styl.css" hreflang="cs" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" media="screen" href="/styly/office/kalendar.css" />
+<script type="text/javascript" src="/js/_ajax.js?v=1" charset="utf-8"></script>
+<script type="text/javascript" src="/js/_textsel.js?v=1" charset="utf-8"></script>
+<script type="text/javascript" src="/js/ckeditor/ckeditor.js"></script>
+
+<link charset="utf-8" lang="cs" type="text/css"
+  href="/styly/office/clanek.css" hreflang="cs"
+  rel="stylesheet" />
+<link rel="shortcut icon" href="/favicon.ico" />
+
+<link rel="alternate" type="application/rss+xml" title="Novinky d20"
+  href="http://www.d20.cz/moduly/rss/rss.php" />
+<link rel="alternate" type="application/rss+xml" title="Vlastní novinky"
+  href="http://www.d20.cz/moduly/rss/rss2.php?user=3127" />
+<!--   <link rel="alternate" type="application/rss+xml" title="RSS-Kl&iacute;&#269;" href="http://www.d20.cz/klic/rss/" /> -->
+
+<script>
+    var fucking_eu_config = {
+        "options": {
+            "popupMore": true
+        },
+        "l18n": {
+            text:"Tento web používá k poskytování služeb a analýze návštěvnosti soubory cookie. Používáním tohoto webu s tím souhlasíte."
+        }
+    };
+</script>
+<script src="/js/cz.js" async></script>
+  <style>
+    .btn {
+      margin-top: .25rem;
+      margin-bottom: .25rem;
+      color: #fff;
+      background-color: #6c757d;
+      border-color: #6c757d;
+      display: inline-block;
+      font-weight: 400;
+      text-align: center;
+      vertical-align: middle;
+      border: 1x solid;
+      padding: .375rem .75rem;
+      line-height: 1.5;
+      border-radius: .25rem;
+      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+
+<div id="horniCastStranky"></div>
+<div id="pageStripCont">
+<div id="pageStrip">
+  <div id="uniMenuCont">
+  <div id="uniMenu">
+    <span class="separatorFirst">|</span>
+    <a  class="selected"  href="http://www.d20.cz">d20</a><span class="separator">|</span>
+<!-- <a  href="http://akce.d20.cz">Akce</a><span class="separator">|</span> -->
+    <a  href="http://cph.d20.cz">CPH</a>
+    <span class="separatorLast">|</span>
+
+    <span class="separatorFirst">|</span>
+<!--    <a  href="http://allmir.d20.cz">Allmir</a><span class="separator">|</span> -->
+    <a  href="http://arda.d20.cz">Arda</a><span class="separator">|</span>
+<!-- <a  href="http://cadwallon.d20.cz">Cadwallon</a><span class="separator">|</span>
+    <a  href="http://darksun.d20.cz">Darksun</a><span class="separator">|</span> -->
+    <a  href="http://dragonlance.d20.cz">Dragonlance</a><span class="separator">|</span>
+    <a  href="http://frealms.d20.cz">FRealms</a><span class="separator">|</span>
+    <a  href="http://icaenel.com">Icaenel</a><span class="separator">|</span>
+    <a  href="http://www.icefire.cz">Icefire</a><span class="separator">|</span>
+    <a  href="http://ravenloft.d20.cz">Ravenloft</a>
+    <span class="separatorLast">|</span>
+
+    <span class="separatorFirst">|</span>
+    <a href="http://srd.d20.cz" target="_blank">SRD pravidla</a><span class="separator">|</span>
+    <a href="/klic/" >Překladové klíče</a><!-- <span class="separator">|</span>
+    <a href="http://www.d20.cz/moduly/playground/" title="Kroniky">Kroniky</a> -->
+    <span class="separatorLast">|</span>
+  </div>
+  </div>
+
+
+</div>
+</div>
+
+<div id="pageLogoCont"
+  class="www">
+<div id="pageLogo"><a href="/" class="hrefHomeArea"></a>
+<div class="loginArea">
+<div class="uzivatelIkona"><a
+  href="/komunita/uzivatele/Naoki/"><img
+  src="/data/U/3127.jpg" /></a>
+</div>
+
+<div class="uzivatelMenu">
+<div class="nazev">Naoki (<a
+  href="?webAction=logout">odhlášení</a>)</div>
+<ul class="menu">
+  <li><a
+    href="/komunita/uzivatele/Naoki/nastaveni.html">Nastavení</a></li>
+  <li><a href="/pm/">Zprávy</a></li>
+  <li><a
+    href="/komunita/uzivatele/Naoki/zalozky.html">Záložky</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="pageMenuCont">
+<div id="pageMenu"><div class="menuStripCont">
+<div class="menuStrip">
+<div class="menuInterCont">
+<div class="menuInter">
+
+  <div class="menuItemCont menuItemFirst menuItemSelected ">
+  <div class="menuItem">
+    <a class="item" href="/clanky/" title="" >Články</a>
+  </div>
+  </div>
+
+  <div class="menuItemCont menuItemFirst ">
+  <div class="menuItem">
+    <a class="item" href="/diskuze/" title="" >Diskuze</a>
+  </div>
+  </div>
+
+  <div class="menuItemCont menuItemFirst ">
+  <div class="menuItem">
+    <a class="item" href="/hlasky/" title="" >Hlášky</a>
+  </div>
+  </div>
+
+  <div class="menuItemCont menuItemFirst ">
+  <div class="menuItem">
+    <a class="item" href="/komunita/" title="" >Komunita</a>
+  </div>
+  </div>
+
+  <div class="menuItemCont menuItemFirst ">
+  <div class="menuItem">
+    <a class="item" href="/kniha-odkazu/" title="" >Odkazy</a>
+  </div>
+  </div>
+  <!--
+  <div class="rychlyOdkazCont">
+  <div class="rychlyOdkaz">
+    <a href="/diskuze/polozit-otazku/"><img src="/styly/office//prikazy/otazka.png" alt="Položit otázku" />Položit otázku</a>
+  </div>
+  </div>
+  -->
+  </div>
+  </div>
+   <div class="hledaniCont">
+   <div class="hledani">
+    <form method="post" id="menuStripHleaniForm" action="/hledani/">
+      <span><input type="text" name="konkretizace_P" size="15" value="" /></span>
+      <span><input type="hidden" name="sa" value="vyhledat" /></span>
+      <span><a href="#" onclick="document.getElementById('menuStripHleaniForm').submit();"><img src="/styly/office//prikazy/hledat.png" alt="Hledat" /></a></span>
+    </form>
+  </div>
+  </div>
+
+  <div class="break"></div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="pageSubMenuCont">
+<div id="pageSubMenu">
+<div class="navigaceCont">
+<div class="navigace"><div class="subMenuTop"></div>
+<div class="subMenuCont">
+<div class="subMenu"><div class="subMenuItemCont ">
+<div class="subMenuItem"><a title="Jak hrát postavu, jak vytvořit zápletku, jak pracovat s příběhem, jak vytvářet charakter. Nejdůležitější rady pro hráče i vypravěče." href="http://www.d20.cz/clanky/tipy-a-triky/">Tipy a triky</a></div>
+</div>
+  <div class="subMenuItemCont ">
+<div class="subMenuItem"><a title="Vyšla příručka, kniha nebo cokoliv jiného, co Vás zaujalo? Neváhejte a podělte se s ostatními o svůj názor!" href="http://www.d20.cz/clanky/produkty/">Produkty</a></div>
+</div>
+  <div class="subMenuItemCont ">
+<div class="subMenuItem"><a title="Próza, poezie, příběhy z hraní... Příběhy chrabrých hrdinů i proradných padouchů, skutky vašich postav převedené v literární útvar." href="http://www.d20.cz/clanky/pribehy/">Příběhy</a></div>
+</div>
+  <div class="subMenuItemCont ">
+<div class="subMenuItem"><a title="Odhalení všech záhad a zákoutí pravidel. Tipy z kuchyně těch nejlepších či nejšílenějších kombinací. Kritika i chvála odborností, povolání, dovedností, kouzel a všeho dalšího, co nabízejí pravidla." href="http://www.d20.cz/clanky/pravidla/">Pravidla</a></div>
+</div>
+  <div class="subMenuItemCont ">
+<div class="subMenuItem"><a title="Tvorba, úpravy, Popis a pravidla jednotlivých herních prostředí, světů a sfér..." href="http://www.d20.cz/clanky/svety/">Prostředí</a></div>
+</div>
+  <div class="subMenuItemCont ">
+<div class="subMenuItem"><a title="Pohled na hraní RPG a d20 z užitečného (občas nezbytného) odstupu." href="http://www.d20.cz/clanky/RPG-odborne/">RPG odborně</a></div>
+</div>
+  <div class="subMenuItemCont ">
+<div class="subMenuItem"><a title="Články zaměřené na historické poznatky uplatnitelné při hře. Od nejrůznějších lodí až po mechanické zbraně vám nabízíme nápady jak přinést do vaší hry závan minulosti." href="http://www.d20.cz/clanky/kultura/">Kultura</a></div>
+</div>
+  <div class="subMenuItemCont ">
+<div class="subMenuItem"><a title="Různorodé materiály pro zasmání - od obrázků, vtípků a článečků až po celé knížky." href="http://www.d20.cz/clanky/stripky/">Střípky</a></div>
+</div>
+  <div class="break"></div>
+</div>
+</div>
+<div class="subMenuBottom"></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="pageMainCont">
+<div id="pageMain">
+<div id="pageMainInner"><div id="pageClanky">
+
+<div class="leftColumnTop"></div>
+<div class="leftColumnCont">
+<div class="leftColumn">
+  <div class="clanekTop"></div>
+<div class="clanekCont">
+<div class="clanek">
+
+    <div style="float:right; text-align:right; width:100px;" class="clanekNastroje">
+
+
+<span class="editace noprint"><a href="http://www.d20.cz/editor/generator-nahodnych-predmetu.html"><img
+  src="/styly/office//prikazy/edit.png"
+  alt="Změnit" title="Změnit článek" /></a></span>
+       <span> <a
+  href="http://www.d20.cz/clanky/generator-nahodnych-predmetu.html?webAction=zalozka&amp;zalozkaId=5362&amp;zalozkaTyp=2"><img
+  src="/styly/office//prikazy/bookmark.png"
+  alt="Záložka" title="Záložka" /></a> </span> </div>
+</div>
+<h1 class="nadpis">Generátor náhodných předmětů</h1>
+
+<div class="klicnikPolozky"></div>
+
+<div class="obsahTop"></div>
+<div class="obsahCont">
+<div class="obsah">
+  <div style="display: flex; flex-direction: column; align-items: center;">
+  <div style="max-width:450px; text-align: center;">
+<div class="predmet">
+<h4>Abrahámův prsten</h4>
+<p>Kdokoli tento stříbrný prsten s drobným rubínem nosí, má místo krve černý jed. Původně využíváno k lovení upírů.</p>
+</div>
+<div class="predmet">
+<h4>Absorbční náramek</h4>
+<p>Spletitý kovový náramek s šesti oranžovými třpytivými kameny. Kdykoli je na nositele sesláno kouzlo, jeden z kamenů ho absorbuje, praskne a ztratí barvu i lesk.</p>
+</div>
+<div class="predmet">
+<h4>Amulet pozornosti</h4>
+<p>Nefunguje ani jako lektvar lásky, ani jako ovládání mysli. Dělá pouze to, že nositel ulpívá lidem déle v paměti. Snadněji si jej zapamatují a zmiňují ho v běžné konverzaci. Po jednom dni v novém městě se o něm mluví ve všech hospodách, do týdne se o něj zajímá šlechta.</p>
+</div>
+<div class="predmet">
+<h4>Ankh vzkříšení</h4>
+<p>Stříbrný přívěsek s egyptským křížem. Pokud nositel zemře, rozzáří se oslepujícím světlem a během několika vteřin ožije. Ankh se nenávratně rozplyne.</p>
+</div>
+<div class="predmet">
+<h4>Balistický kámen</h4>
+<p>Jednoduchý oblázek s jedinou drobnou runou. Při roztáčení v praku jasně září a hlasitě sviští. Automaticky zasáhne, způsobí kritické zranění a roztříští se ve vílí prach.</p>
+</div>
+<div class="predmet">
+<h4>Barlumovo těžítko</h4>
+<p>Drobná pískovcová kulička. S každou ranou kladivem či obdobnou silou o kus povyroste. Postupně lze zvětšit až do velikosti dospělého ogra. Něžným hlazením ji lze pomalu vrátit do původní velikosti.</p>
+</div>
+<div class="predmet">
+<h4>Barlumův mozek</h4>
+<p>Nezničitelný mozek mága Barluma. Dotkni se jej holou rukou a můžeš se zeptat na libovolnou otázku z historie, zeměpisu, kosmologie nebo arkány. S každým použitím se do tebe dostane část Barlumova charakteru (mimo jiné posedlost sférami, koulemi, kruhy a cyklicitou) a vypravěč za tebe v budoucnu může udělat jednu akci. Případné účinky dlouhodobého využívání nechávám na vypravěči.</p>
+</div>
+<div class="predmet">
+<h4>Batát sytosti</h4>
+<p>Velká fialovo-oranžová sladká brambora. Neustále dorůstá a denně pohodlně nasytí jednoho člověka. Při dlouhodobé konzumaci se strávníku obarví pleť do ruda.</p>
+</div>
+<div class="predmet">
+<h4>Bedenkerovo oko</h4>
+<p>Bronzová bulva pokrytá geometrickými ornamenty. Lze vložit do očnice na místo chybějícího oka a propůjčuje nositeli infravizi a schopnost jedenkrát denně vyslat z bulvy laserový paprsek, který vždy přesně trefí zamýšlený cíl.</p>
+</div>
+<div class="predmet">
+<h4>Boty elfích špehů</h4>
+<p>Lehké boty z jemné kůže, které při pohybu v lesích negují zvuk kroků a nezanechávají žádné stopy.</p>
+</div>
+<div class="predmet">
+<h4>Broukozbroj</h4>
+<p>Výtvorem nemilosrdné magie byl obří šváb proměněn v chitinovou zbroj. Dokáže se pohybovat samovolně, pít, krmit se, a v případě potřeby se ihned obepne kolem majitele jako zbroj. Lehčí než gambeson, pevnější než plátová. S každým zásahem slábne a nakonec zemře, pokud nemá dost času na zhojení.</p>
+</div>
+<div class="predmet">
+<h4>Časoprostorový uhel</h4>
+<p>Duhově se lesknoucí kreslířský uhel vylisovaný z popela časoprostorového mága. Cokoli s ním nakreslíte se zjeví. Vydrží cca na pět běžných předmětů.</p>
+</div>
+<div class="predmet">
+<h4>Černý hřebec</h4>
+<p>Drobný ebenový koník. Postav jej na zem a změní se v mohutného válečného koně. Kdykoli jej jezdec propustí, aby se napásl nebo čekal, změní se zpět v ebenového koníka.</p>
+</div>
+<div class="predmet">
+<h4>Černá dýka</h4>
+<p>Trojhraný bodec černého kovu kalený v krvi. Zabití touto zbraní pokračují v (ne)životě jako nemyslící, hnijící umrlci ve službách svého vraha.</p>
+</div>
+<div class="predmet">
+<h4>Deštník první dámy</h4>
+<p>Stylový renesanční deštník se složitým krajkovým vzorem a dekorativními korálky. Vzplane a shoří na popel, pokud je nositel cílem útočného nebo negativního kouzla, které je tím plně neutralizováno.</p>
+</div>
+<div class="predmet">
+<h4>Drakobijcův plášť</h4>
+<p>Dlouhý, těžký a potrhaný plášť s absurdně detailním runovým vyšíváním. Nasáklý urozenou krví ochrání nositele před libovolným žárem.</p>
+</div>
+<div class="predmet">
+<h4>Druhé srdce</h4>
+<p>Hrubě opracovaný rubín dekorovaný chaotickými nitkami ryzího zlata. Po smrti nositele se do něj vsákne, nahradí jeho srdce, a znovu jej oživí. Takto oživený bude ke zdraví krom běžné stravy, spánku nebo pohybu vyžadovat navíc luxus; víno, drahé šaty, gastronomické zážitky, šperky, šlechtické bály apod.</p>
+</div>
+<div class="predmet">
+<h4>Duhové korále</h4>
+<p>Po dobu nošení změní věk majitele na tolik, kolik korálků na náhrdelník navlékl.</p>
+</div>
+<div class="predmet">
+<h4>Dvojknihy</h4>
+<p>Dvojice prázdných knih vázaných v jemné kůži mladých impů. Cokoli napsaného do jedné se objeví i v druhé a obráceně.</p>
+</div>
+<div class="predmet">
+<h4>Dýmka skaldů</h4>
+<p>Majitel může vyfukovaný kouř libovolně tvarovat a měnit vlastními myšlenkami.</p>
+</div>
+<div class="predmet">
+<h4>Erik</h4>
+<p>Očarovaná mrtvola. Otáčením knoflíků na košili lze měnit nastavení; úroveň rozkladu, váhu, věk, rasu a pohlaví. Za poslední knoflík jej lze zvednout. Hned, jak za knoflík zatáhnete, tak se do něj Erik celý nacucne, a pokud knoflík znovu položíte, Erik se znovu zhmotní.</p>
+</div>
+<div class="predmet">
+<h4>Hlasatel</h4>
+<p>Mrtvá hlava trvale zastavená ve třetím dni rozkladu od oddělení těla. Má široce rozevřená ústa, a cokoli je jí pošeptáno do ucha, se zřetelně ozve v myslích všech živých bytostí v dosahu půl dne cesty.</p>
+</div>
+<div class="predmet">
+<h4>Hliněný klíč</h4>
+<p>Beztvarý klíč, který se natrvalo zformuje podle prvního zámku, který s ním otevřete.</p>
+</div>
+<div class="predmet">
+<h4>Hodiny lítosti</h4>
+<p>Složitý kapesní mechanismus, který ukazuje přesný čas. Při rozbití z nich magie vyprchá a vrátí čas o hodinu zpět.</p>
+</div>
+<div class="predmet">
+<h4>Homunculus</h4>
+<p>Dvě stopy vysoký hliněný skřet. Kdo jej potřísní vlastní krví, tomu bude do příštího východu slunce sloužit. Neumí mluvit, ale hloupý není.</p>
+</div>
+<div class="predmet">
+<h4>Hromový luk</h4>
+<p>Elegantně zakroucený krátký luk z lesklého dřeva. Má neviditelnou tětivu, která se, společně s šípem čiré bleskové energie, zhmotní pouze, když k ní střelec přiloží prsty. Po zásahu výboj přeskočí na další dva náhodné cíle v blízkosti.</p>
+</div>
+<div class="predmet">
+<h4>Hůl začátku konce</h4>
+<p>Rudě orezlá čarodějná hůl zvučného kovu se stopu vysokým obsidiánovým krystalem. Lze využít k posílení libovolného kouzla nebo k nasátí energie na nové kouzlo. Každé použití promění v popel všechnu vodu, floru a drobnou faunu v kilometrovém okruhu.</p>
+</div>
+<div class="predmet">
+<h4>Chakram</h4>
+<p>Necelou stopu široký ocelový kruh s čepelí na vnější hraně. Nebezpečný jako vrhací nůž, s tím rozdílem, že po prvním zásahu nekončí, ale odráží se k dalším cílům.</p>
+</div>
+<div class="predmet">
+<h4>Iskandarský bonbon</h4>
+<p>Mnohovrstvá sladkost. Po konzumaci rozdělí osobu ve dvě. Vesmír se brání a nenechá klony přirozeně léčit nebo spát, dokud jednoho z nich zranění či únava neskolí.</p>
+</div>
+<div class="predmet">
+<h4>Ještěří kůže</h4>
+<p>Lehká zbroj z ještěří kůže. Po oblečení a nasazení helmice ožije, vyplní mezery a změní nositele v ještěrce s přísavkami na rukách i nohách. Od helmice lze zase sundat a zbroj i nositel se změní do původní podoby.</p>
+</div>
+<div class="predmet">
+<h4>Kamenná pecka</h4>
+<p>Zasaď, zalij, do zítra vyroste opevněná strážní věž. Během 1k10ti dní vyroste přilehlá věž, za dalších 1k10 nádvoří, pak stáje, tvrz, vysoká čarodějná věž, dvojitá brána s padacím mostem, hrad se dál postupně rozrůstá a zastaví se až u prokletého žaláře a portálu do temné dimenze.</p>
+</div>
+<div class="predmet">
+<h4>Kapesní hůl</h4>
+<p>Dekorovaná bronzová hůl, lehká jako ze dřeva a pevnější než ocel. Dokáže se na přání nositele libovolně zkrátit nebo prodloužit (od pěti palců do dvaceti kroků).</p>
+</div>
+<div class="predmet">
+<h4>Kašpaří botičky</h4>
+<p>Boty z jemné kůže, jedna rudá, druhá zelená, obě se zakroucenou špičkou a velkou rolničkou. Na rozkaz libovolně změní nositelovi stopy (může zanechávat třeba slepičí, medvědí, goblinní...) nebo zvuk jeho kroků (může znít jako kůň, myška, slon…).</p>
+</div>
+<div class="predmet">
+<h4>Klíč skladiště</h4>
+<p>Jakékoli dveře s ním otevřete, povedou vždy do stejné mimoprostorové komory.</p>
+</div>
+<div class="predmet">
+<h4>Kočičí rukavice</h4>
+<p>Překrásně zlatem vyšívaná černá rukavice. Jakýkoli drobný neživý předmět je jejím dotekem na jednu hodinu proměňen ve zlatou minci.</p>
+</div>
+<div class="predmet">
+<h4>Korunka posměchu</h4>
+<p>Třpytivý diadém. Sám nic netuší, ale pro všechny ostatní vypadá nositel groteskně ošklivý: odstáté uši, napuchlé tváře, opičí čelo, téměř prasečí nos apod.</p>
+</div>
+<div class="predmet">
+<h4>Koruna otroctví</h4>
+<p>Kdo si tuto zlatou korunu dobrovolně nasadí, bez rozmyslu poslechne rozkazy kohokoliv v doslechu.</p>
+</div>
+<div class="predmet">
+<h4>Koruna telepatie</h4>
+<p>Subtilní mitrilová koruna bez dekorací. Nositel cítí emoce ostatních ve svém okolí. Ví, kdy se bojí, kdy lžou, kdy se těší etc. Se soustředěním se může pokusit číst i jejich povrchové myšlenky.</p>
+</div>
+<div class="predmet">
+<h4>Kost Decarabia</h4>
+<p>Krátká zakroucená vrhací sekyra s širokou čepelí, vyřezaná z kosti vyššího démona. Po zásahu se vrátí zpět do dlaně nositele.</p>
+</div>
+<div class="predmet">
+<h4>Krysa neštěstí</h4>
+<p>Nositel tohoto vyschlého, ohavného přívěsku nemůže zemřít. Případné stáří, smrtelná zranění či nemoci, nositele doženou hned, jak o něj přijde.</p>
+</div>
+<div class="predmet">
+<h4>Laser blaster</h4>
+<p>Plastocelová laserová pistole. Neomezená munice.</p>
+</div>
+<div class="predmet">
+<h4>Lenochův deník</h4>
+<p>Prázdná kniha s koženým vázáním a bronzovou sponou. Dokud je v kolonce na první straně vyplněno skutečné plné jméno, tak deník sám zaznamenává život podepsaného.</p>
+</div>
+<div class="predmet">
+<h4>Létající koberec</h4>
+<p>Unese sotva tři osoby. Při sebemenším poškození z něj začne unikat energie a snižuje se ovladatelnost a stabilita.</p>
+</div>
+<div class="predmet">
+<h4>Meč velmistra</h4>
+<p>Absurdně tenká a neuvěřitelně ostrá čepel, která se snadno rozvibruje a těžko kontroluje. Zpočátku je jen handicap, a kdo ji chce ovládnout, musí s ní ve smrtelném boji porazit, alespoň tucet nepřátel.</p>
+<p>Příklad použití v pravidlech: Před ovládnutím -2 k útoku. Po ovládnutí +2 k útoku. Kdykoli na poškození padne 1-2, usekne soupeři kus zbraně, zbroje, vybavení nebo končetinu (poslední slovo má vypravěč).</p>
+</div>
+<div class="predmet">
+<h4>Měšec chapadel</h4>
+<p>Mastný měšec z pevné, tenké kůže, plný černých koulí podobných bulvám bez rohovek. Kdykoli se nějaká bulva rozmáčkne, protrhne nebo rozřízne, vystřelí z ní chapadla monstra nepochopitelného tvaru a nekonečného hladu.</p>
+</div>
+<div class="predmet">
+<h4>Mluvící bomba</h4>
+<p>Klasická černá koule s knotem, ovšem s animovaným kovovým obličejem na povrchu. Přátelská, trochu drzá a oplzlá. Pokud ji zapálíte, přestože ještě nebude na finální oběť připravena, zhluboka se nadechne, vyfoukne knotem a zhasne se.</p>
+</div>
+<div class="predmet">
+<h4>Mnohošat</h4>
+<p>Oblek, který při skládání změní podobu na libovolný oděv dle majitelova přání.</p>
+</div>
+<div class="predmet">
+<h4>Módní past</h4>
+<p>Oblek, který se vždy postupně samovolně mění do podoby vrcholného stylu u královského dvora. Ihned po oblečení se sevře a sváže jako svěrací kazajka.</p>
+</div>
+<div class="predmet">
+<h4>Mušle tajemství</h4>
+<p>Mořská mušle, ze které při poslechu krom ozvěn moře vychází i všechny zvuky z nejbližší lodi.</p>
+</div>
+<div class="predmet">
+<h4>Nátepníky spojenectví</h4>
+<p>Chrániče předloktí s polovinou runové brány na každé ruce. Existují dva páry. Kdykoli nositel srazí předloktí k sobě tak, aby se spojil obraz brány, teleportuje se před něj druhý pár i s jejich nositelem.</p>
+</div>
+<div class="predmet">
+<h4>Nekonečné lano</h4>
+<p>Smotaný provaz, který nelze rozmotat. Lze z něj tahat lano donekonečna. Dvě nevýhody: Nelze z něj odřezávat, oddělená část se ihned rozplyne. Pokud se odmotá příliš na jedno místo, kopec lan ožije jako zuřivý provazový elementál.</p>
+</div>
+<div class="predmet">
+<h4>Nepolapitelný šat</h4>
+<p>Několikavrstvý oděv s přiléhavou spodní vrstvou, širokými kalhotami uvázanými nad kotníky, rozevlátými róbami a pentlemi. Po dopnutí všech pásků se stane extrémně kluzký, s minimálním třením. Nositele nelze chytit či udržet a ve skluzu může přejet třeba celé náměstí.</p>
+</div>
+<div class="predmet">
+<h4>Netopýří maska</h4>
+<p>Po nasazení ožije, dýchá, cítí, vidí, doslova nahradí nositelův obličej. Vypadá jako děsivý upíří netopýr a nositel s ní může využívat echolokace a pít krev ostatních, aby okamžitě vyléčil svá vlastní zranění.</p>
+</div>
+<div class="predmet">
+<h4>Neviditelný plášť</h4>
+<p>Zneviditelní pouze to, co se v něm skrývá, takže pro úplnou neviditelnost se do něj musí nositel zabalit. Naštěstí je zevnitř průhledný.</p>
+</div>
+<div class="predmet">
+<h4>Nezastavitelná zbroj</h4>
+<p>Plná plátová zbroj stále posedlá duší mrtvého rytíře. Nositel může při boji předat kontrolu zkušenému rytíři. Navíc zbroj bojuje i chvíli potom, co byl nositel vyřazen.</p>
+</div>
+<div class="predmet">
+<h4>Nulorb</h4>
+<p>Poloprůsvitný perleťově lesklý orb. Při rozbití vyšle do všech stran sotva citelnou vlnu, která na směnu vypne stávající magii v okruhu jednoho kilometru.</p>
+</div>
+<div class="predmet">
+<h4>Obchodníkova ruka</h4>
+<p>Za zápěstím uťatá ruka, stále čerstvá, ale nekrvácí. Používá se k dohodám. Namísto mezi sebou si obě strany potřesou s Obchodníkovou rukou. Kdo dohodu poruší, poštve na sebe mstivého ducha.</p>
+</div>
+<div class="predmet">
+<h4>Objevitelovo pohodlí</h4>
+<p>Stanový kolík z neznámého rudého kovu pokrytý hranatými runami. Jakýkoli stan, který je s ním upevněn, je pevnější, stabilnější, plný dýchatelného vzduchu, odpuzuje hmyz a hlodavce, s teplotou a vlhkostí vždy k největší pohodlnosti.</p>
+</div>
+<div class="predmet">
+<h4>Ohnivý meč</h4>
+<p>Na dotek horký meč s rudě zářícími runami. Čím zuřivější, zoufalejší nebo blíže smrti nositel je, tím intenzivnějším planemem se čepel pokryje.</p>
+</div>
+<div class="predmet">
+<h4>Ohnivý bič</h4>
+<p>Černý pekelný bič při každém prásknutí vyšlehne intenzivní plamen. Má delší dosah než píka, ale nelze s ním bojovat úplně zblízka.</p>
+</div>
+<div class="predmet">
+<h4>Opačný opasek</h4>
+<p>Opasek rudé kůže s nenápadnou, ale detailně zdobenou přeskou, na které se do sebe vpíjí dva milenci. Po nasazení změní pohlaví nositele na opačné.</p>
+</div>
+<div class="predmet">
+<h4>Opasek ogří síly</h4>
+<p>Nositel se viditelně zvětší, posílí a napnou se mu svaly do ruda. Snadněji ovšem krvácí.</p>
+</div>
+<div class="predmet">
+<h4>Opičí rukavice</h4>
+<p>Nenatahují se na ruce, ale na nohy. Obrátí palce proti chodidlům a změní nohy v silné chápavé ruce, podobně jako u opic.</p>
+</div>
+<div class="predmet">
+<h4>Paranoidní slánka</h4>
+<p>Jednoduchá dřevěná slánka s vypálenými jedovatými rostlinami. Solením neutralizuje všechny jedy v jídle či nápoji.</p>
+</div>
+<div class="predmet">
+<h4>Parfém důvěry</h4>
+<p>Flakón svěží ovocné vůně s rozprašovačem. Přátele léčí, na nepřátele účinkuje jako slzný plyn. Intenzita závisí na síle vašeho přátelství či nepřátelství. Vystačí na deset použití.</p>
+</div>
+<div class="predmet">
+<h4>Pero havraního prince</h4>
+<p>Samo píše, co je mu diktováno. Pokud s ním ovšem někdo napíše lež (resp. něco, čemu sám nevěří), budou jej pronásledovat havrani a opakovat hesla jako “Lhářřř! Věrrrolomník!”</p>
+</div>
+<div class="predmet">
+<h4>Plášť lehkosti</h4>
+<p>Krátký bledě-modrý plášť z brokátu se vzory mraků, blesků a vichrů. Nositel doskočí i vyskočí třikrát více než by dokázal obyčejně. Při pádu se mraky na plášti rozeběhnou a celý se zdánlivě prodlouží a roztáhne, aby nositele bezpečně snesl k zemi.</p>
+</div>
+<div class="predmet">
+<h4>Plátno zapomnění</h4>
+<p>Cokoli je v něm zabalené, dočasně zmizí z myslí všech, kteří to znali.</p>
+</div>
+<div class="predmet">
+<h4>Proudové pádlo</h4>
+<p>Na rozdíl od obyčejného posouvá masu vody pod pádlujícím, kterého bere jako pevný bod. Pádlo takto pohybuje všemi “neživými” tekutinami v okolí (rozsah malé osady), víno vyskočí z poháru, v moři se objeví nový proud, potoky se vylévají z břehů, vaničky se vylijí i s dětmi, etc. Použití pádla je fyzicky náročné.</p>
+</div>
+<div class="predmet">
+<h4>Prsten odpočinku</h4>
+<p>Po nasazení uspí tělo a duši přesune do malé soukromé dimenze. Je to útulná vesnička u jezera s malou tvrzí a  krásným výhledem. Sundáním prstenu se duše vrátí a tělo probudí. Duše ve vesnici zemřít nemůže, pouze se vrátí do těla a probudí. Pokud zemře spící tělo, zůstane duše uvězněná ve vesnici. Na světě je celkem pět prstenů odpočinku a všechny vedou do stejné vesnice.</p>
+</div>
+<div class="predmet">
+<h4>Prsten regenerace</h4>
+<p>Mohutný zlatý kruh se zářivě lesklým obdélníkovým rubínem. Nositel do něj může vědomně začít ukládat své zdraví. Za dny a týdny, které stráví takto zesláblý a ospalý, se potom může v nouzi rapidně regenerovat.</p>
+</div>
+<div class="predmet">
+<h4>Prsten síly</h4>
+<p>Široký mosazný prsten s hranatými runami. Po kouskách sbírá kinetickou energii ze všech pohybů svého nositele. Ten ji pak může v jeden moment vypustit v úderu pěstí s tímto prstenem. Po dni nabíjení je úder silný jako palcát, po týdnu jako ogří kyj, po měsící jako armádní beranidlo.</p>
+</div>
+<div class="predmet">
+<h4>Přezvětšovač</h4>
+<p>Široký kožený opasek pokrytý miniaturními přístroji, trubičkami a ozubenými kolečky. Pomocí otočného přepínače na boku lze nositele až pětinásobně zmenšit nebo dvojnásobně zvětšit. Opasek se po čase přetíží a změní nositele zpět; při zmenšení vydrží několik hodin, při zvětšení několik vteřin.</p>
+</div>
+<div class="predmet">
+<h4>Ptačí matka</h4>
+<p>Amulet s vyschlou vlaštovčí hlavou, který umožňuje nositeli obětovat trochu z vlastní životní energie, aby vyvrhnul jídlo pro ostatní. Jeho zvratky, přestože nechutné, jsou jedlé a výživné.</p>
+</div>
+<div class="predmet">
+<h4>Rýč pracovitosti</h4>
+<p>Pevný, i když ošoupaný, pracovní nástroj, který na rozkaz majitele sám kope. Ve skutečnosti je k němu stále přivázaný duch otroka, jenž se jím bránil v posledních chvílích svého života.</p>
+</div>
+<div class="predmet">
+<h4>Rytířská krev</h4>
+<p>Nadpřirozeně ostrý obouruční meč s širokou čepelí chromově lesklého kovu. Na mentální příkaz nositele se vsákne pod kůži a rozpustí do krevního oběhu. V tomto stavu, dokud není znovu přivolán do dlaně, částečně snižuje nositeli všechna utržená zranění.</p>
+</div>
+<div class="predmet">
+<h4>Řev nebes</h4>
+<p>Meč, do kterého lze chytit blesk a přesměrovat jej na nepřítele. Funguje jedenkrát za boj a pouze v bouři. Doporučuji hráče vyděsit s tím, že se poškození rozdělí mezi něj a jeho cíl náhodně, a nakonec, pokud se i tak odhodlá, odhalit, že všechno poškození utrží nepřítel. Takový malý test odvahy pro hrdiny, kteří chtějí vládnout hromu.</p>
+</div>
+<div class="predmet">
+<h4>Sbírka miniatur</h4>
+<p>Vyřezávaná klenotnička plná miniaturních předmětů, které se po kontaktu s vodou zvětší do své běžné velikosti. Beranidlo, vůz, svazek dlouhých pík, katapult, kušnická pavéza, mlýnské kolo, pivovarský sud, pramice, manželská postel, posed a žebřík.</p>
+</div>
+<div class="predmet">
+<h4>Sklenice nekonečné mlhy</h4>
+<p>Zavařovací sklenice, po otevření vypouští těžkou šedo-bílou mlhu, která rychle vyplňuje prostor ve svém okolí. Během směny zahltí celou vesnici.</p>
+</div>
+<div class="predmet">
+<h4>Skokanův kompas</h4>
+<p>Nositel musí myslet na konkrétní lokaci, kterou už někdy navštívil. Při otevření kompasu se před ním vytvoří portál vedoucí do náhodného jiného světa. Za portálem kompas ukazuje cestu k dalšímu portálu v blízkosti, kterým se nositel dostane zpět do svého světa na původně zamýšlené místo.</p>
+<p>Obchodní středisko v Dallasu během Černého pátku.
+    Paluba Enterprise právě odrážející invazi mimozemské rasy.
+    Duny pouštní planety, kde šlechtické rody bojují o Koření.
+    Pyramidy s perpetuálními lidskými oběťmi pro usmíření vyhasínajícího slunce.
+    Planeta šedých mužíků s rigidně pacifistickou a byrokratickou kulturou.
+    Dinosauří džungle během zuřivé bouře a blížících se záplav.</p>
+</div>
+<div class="predmet">
+<h4>Skryté štěstí</h4>
+<p>Malý čtvercový měšeček, ve kterém se skrývají dva zlaté snubní prsteny, natrvalo zapečetěný pečlivě vyšívanými květinami. Hráč nositele může jedenkrát za sezení drobně ovlivnit svět kolem své postavy (Stráže půjdou kolem, když se to bude hodit. Meče dekorují stěny v místnosti, kde se postava skryla...) Vypravěč může zásah vetovat a navrhnout alternativu.</p>
+</div>
+<div class="predmet">
+<h4>Slídičův knoflík</h4>
+<p>Po spolknutí z těla vypudí duši v podobě rychle se pohybujícího embrya se šmoulím hlasem. Vlezením zpět do vlastních útrob lze tělo oživit a knoflík vyplivnout.</p>
+</div>
+<div class="predmet">
+<h4>Sluneční kyrys</h4>
+<p>Zbroj blyštivá jako vyleštěné zrcadlo. Kdykoli nositele zraní duch nebo nemrtvý, rozzáří se na moment denním světlem, které ničí, zahání nebo oslňuje nemrtvé.</p>
+</div>
+<div class="predmet">
+<h4>Soška moudrosti</h4>
+<p>Malá bronzová soška boha s ptačí hlavou a křídly místo paží. Mocným hlasem odpovídá na libovolné otázky, ale často požaduje čas na rozmyšlenou nebo protislužbu. Ve skutečnosti komunikační zařízení na jehož druhém konci je čaroděj, který ze své věže manipuluje světem skrze podobné předměty.</p>
+</div>
+<div class="predmet">
+<h4>Spojená zrcadla</h4>
+<p>Šest stop vysoká stříbrem dekorovaná oválná zrcadla. Neodráží zpět své okolí, ale fungují jako okna od jednoho k druhému a zpět. Nejsou to plně funkční portály, nelze jimi prolézt nebo podat předmět. Propouští pouze smyslové vjemy jako obraz, zvuk, vůni, dojem tepla nebo průvanu apod.</p>
+</div>
+<div class="predmet">
+<h4>Stopařský plamen</h4>
+<p>Olejová lampa, která hoří růžovým plamenem a rudě rozzáří všechny stopy v dosahu svého světla. Stopy tam ani nemusí fyzicky být, ukáže otisky všech průchozích i na dlážděném povrchu. Čím starší stopa, tím slabší záře.</p>
+</div>
+<div class="predmet">
+<h4>Stříbrné jezero</h4>
+<p>Křišťálový flakón, nekonečný zdroj vody. Při rozbití způsobí povodeň.</p>
+</div>
+<div class="predmet">
+<h4>Svatý olej</h4>
+<p>Úzká bronzová nádoba. Jako svěcená voda, ale navíc pomalu hoří intenzivním zlatým plamenem, který nemrtví nebo démoni nedokáží překročit. Lze s ním tak například zahradit cestu nebo někoho lapit do ohnivého kruhu.</p>
+</div>
+<div class="predmet">
+<h4>Svíce přání</h4>
+<p>Krvavě rudý vosk. Nikdy nevyhoří a nelze zničit nebo zahodit, vždy se vrátí, lze pouze darovat. Po zapálení přivolá démona smluv. Jeho tvář se zjeví poblíž (ve vodní hladině, kouři, ohni, etc) a začne smlouvat. Výměnou za platbu nebo protislužbu dokáže ovlivnit svět kolem vás (např. zařídit, aby se baronovi stráže dnes v noci opily). Protislužby sahají od rituálních (za úplňku podřež kozu a vykoupej se v její krvi) po podezřele specifické (po poledni v hostinci U Kraba pochval korvinskému obchodníkovi klobouk).</p>
+</div>
+<div class="predmet">
+<h4>Svíce smíru</h4>
+<p>Po zapálení nelze sfouknout. Dokud nedohoří, nikdo v její přítomnosti nedokáže zaútočit nebo jinak kohokoli fyzicky napadnout.</p>
+</div>
+<div class="predmet">
+<h4>Trojzubec Arobora</h4>
+<p>Celý z lesklého, modrozeleného korálu, se třemi dlouhými hroty. Dokud se jej nositel dotýká, dokáže dýchat vodu a plavat bez námahy trojnásobnou rychlostí.</p>
+</div>
+<div class="predmet">
+<h4>Urna černého porcelánu</h4>
+<p>Po otevření se před nositelem zhmotní tucet poslušných vojáků z černého porcelánu, s krátkými meči, destičkovými zbrojemi a vysokými štíty. Při zavření zase zmizí. Pokud některý z nich zemře, příště už se neobjeví.</p>
+</div>
+<div class="predmet">
+<h4>Útočná hůlka</h4>
+<p>Štíhlá čarodějná hůlka, která s dostatečně názorným pohybem ruky (respektive takovým, co jasně naznačí záměr - útok) vystřelí projektil stříbřité energie, který narazí do cíle dvojnásobnou silou válečného kladiva. S každým použitím je 1z10ti šance na vyčerpání a prasknutí hůlky.</p>
+</div>
+<div class="predmet">
+<h4>)Větrný meč</h4>
+<p>Tenká lesknoucí se čepel, která při máchnutí zvedne mocný poryv větru. Lze použít k rozhození rovnováhy protivníka, odklonění nepřátelských šípů, dopomoct k vysokému skoku etc. Funguje jen, dokud je nositel lehký jako vítr; zranění, přetížení, stres, strach či hněv schopnosti meče oslabují.</p>
+</div>
+<div class="predmet">
+<h4>Voodoo panenka</h4>
+<p>Zkroucené dřevo, lněné plátno, hliněný porcelán, větvičky, zežloutlé sádlo, sušené vnitřnosti malých zvířat, vskutku roztomilá panenka. Chybí už jen připnout vlasy vybrané oběti a začít s mučením.</p>
+</div>
+<div class="predmet">
+<h4>Vrrčí kožich</h4>
+<p>Potrhaný kožešinový plášť s ošklivou, zdeformovanou vlčí hlavou místo kapuce. Dává nositeli schopnost proměny ve vrrka, dost velkého, aby unesl lidského jezdce. Kožich se použitím vybije a lze jej nabít jen roztažením v měsíčním světle.</p>
+</div>
+<div class="predmet">
+<h4>Zadní chapadlo</h4>
+<p>Jakkoli komicky a nepohodlně to zní, po nasazení tohoto amuletu vyjede nositeli z konečníku tří-sáhové chapadlo, které může plně ovládat.</p>
+</div>
+<div class="predmet">
+<h4>Zlodějova skleněnka</h4>
+<p>Cvrnkací kulička, která se vždy kutálí k nejbližšímu shromáždění mincí většímu než má majitel ve svém měšci.</p>
+</div>
+<div class="predmet">
+<h4>Zrádcův pohár</h4>
+<p>Změní libovolný nápoj ve smrtelný jed. Nemá neomezenou moc, pokud jej hodíte do studny, pravděpodobně ji nezmění ve smrtelně jedovatou, pouze nepitnou.</p>
+</div>
+<div class="predmet">
+<h4>Zvukrabička</h4>
+<p>Kovová krychle s nepochopitelně složitým mechanismem uvnitř. Kdykoli je v ní klíček, je ticho. Když je klíčkem otáčeno, nahrává zvuk z okolí. Kdykoli je klíček vytažen, otevře se a přehraje nahraný zvuk.</p>
+</div>
+  </div>
+
+  <div style="margin-top: 1rem;">
+    <a onClick="toggleHidden()" class="btn">Generovat nový předmět</a>  <a class="btn" href="http://2k6goblinu.blogspot.com/2019/07/100-naprosto-originalnich-perfektne.html">Zobrazit všechny</a>
+  </div>
+</div>
+
+</div>
+</div>
+<div class="obsahBottom"></div>
+  <div class="zapatiTop"></div>
+<div class="zapatiCont">
+<div class="zapati"></div>
+</div>
+<div class="zapatiBottom"></div>
+
+<div class="autor">
+Článek vložil <a href="/komunita/uzivatele/Naoki/">Naoki</a> |
+<a href="http://2k6goblinu.blogspot.com/">Quentin</a>
+08.05.2020</div>
+
+
+<div class="reakceTop"></div>
+<div class="reakceCont noprint">
+<div class="reakce"><form
+  action="http://www.d20.cz/diskuze/stripky-diskuze/zalozit.html"
+  method="post"><b>Zaslat reakci na článek</b><br />
+<table style="width: 100%;">
+  <tr>
+    <td colspan="2">
+    <div class="formularOtazkaVelikosti">Velikost okna: <span
+      style="cursor: pointer;"
+      onclick="var o = document.getElementById('pageDiskuzeZadaniOdpovedi'); o.style.height='100px';">[1]</span>
+    <span style="cursor: pointer;"
+      onclick="var o = document.getElementById('pageDiskuzeZadaniOdpovedi'); o.style.height='300px';">[2]</span>
+    <span style="cursor: pointer;"
+      onclick="var o = document.getElementById('pageDiskuzeZadaniOdpovedi'); o.style.height='600px';">[3]</span>
+    </div>
+    </td>
+
+
+  <tr>
+
+
+  <tr>
+    <td colspan="2"><textarea style="width: 100%;" rows="5"
+      id="pageDiskuzeZadaniOdpovedi" cols="60" name="obsah"></textarea></td>
+  </tr>
+  <tr>
+    <td>
+    <div class="nastrojeOkna">Tagy:
+    <button title="Tučně" type="button" class="miniButton"
+      onclick="insertTags('[b]','[/b]','','pageDiskuzeZadaniOdpovedi');"><b>B</b></button>
+    <button title="Kurzíva" type="button" class="miniButton"
+      onclick="insertTags('[i]','[/i]','','pageDiskuzeZadaniOdpovedi')"><i>I</i></button>
+    <button title="Podtrženo" type="button" class="miniButton"
+      onclick="insertTags('[u]','[/u]','','pageDiskuzeZadaniOdpovedi')"><u>U</u></button>
+    <button title="Seznam" type="button" class="miniButton"
+      onclick="insertTags('\n[ul]\n [li]','[/li]\n [li][/li]\n [li][/li]\n[/ul]','','pageDiskuzeZadaniOdpovedi')"><b>List</b></button>
+    <button title="Obrázek" type="button" class="miniButton"
+      onclick="insertTags('[img src=&quot;http://&quot; title=&quot;','&quot;]','','pageDiskuzeZadaniOdpovedi')"><b>IMG</b></button>
+    <button title="Odkaz" type="button" class="miniButton"
+      onclick="insertTags('[a href=&quot;http://&quot;]','[/a]','','pageDiskuzeZadaniOdpovedi')"><b>URL</b></button>
+    <button title="Citace" type="button" class="miniButton"
+      onclick="insertTags('[cite name=&quot;&quot;]','[/cite]','','pageDiskuzeZadaniOdpovedi');"><b>Cite</b></button>
+    </div>
+    </td>
+    <td>
+    <button type="submit">Přidat</button>
+    <input type="hidden" name="fr_id" value="91" /> <input
+      type="hidden" name="fi_id" value="5362" /> <input
+      type="hidden" name="ft_id" value="2" /> <input
+      type="hidden" name="sa" value="pridatOtazkuKClanku" /> <input
+      type="hidden" name="FORM_UID" value="619465264.70f5930090d9dc97bd90" /> <input
+      type="hidden" name="FORM_REM" value="1" /></td>
+  </tr>
+
+
+</table>
+</form>
+</div>
+</div>
+<div class="reakceBottom"></div>
+
+</div>
+</div>
+<div class="clanekBottom"></div>
+
+
+
+<div class="zarazka"></div>
+</div>
+</div>
+<div class="leftColumnBottom"></div>
+
+<div class="rightColumnTop"></div>
+<div class="rightColumnCont">
+<div class="rightColumn">
+
+<div id="mainPagePanelNovinekVypis">
+<div class="panelNovinekTop"></div>
+<div class="panelNovinekCont">
+<div class="panelNovinek">
+
+<div class="jsMenuCont"><div class="jsMenu"><div id="mainPagePanelNovinekVypisMenu"><div class="jsMenuPolozkaCont selected "><div class="jsMenuPolozka  selected "><a href="#"onclick="obj = new MyAjax; obj.SendRequestToElement('/moduly/ajax/panelRssNovinky.php?obsah=novinky','mainPagePanelNovinekVypis');return false;"
+      >Novinky</a></div></div><div class="jsMenuPolozkaCont"><div class="jsMenuPolozka "><a href="#"onclick="obj = new MyAjax; obj.SendRequestToElement('/moduly/ajax/panelRssNovinky.php?obsah=zalozky','mainPagePanelNovinekVypis');return false;"
+      >Záložky</a></div></div></div></div></div><div class="break"></div>
+
+<div class="kontainer"><div style="display: none;">ČAS registrovaní : 0.12696504592896 sec; </div><div class="pubDate">Dnes</div><div class="panelNovinekPolozkaCont">
+<div class="panelNovinekPolozka">
+<div class="indikatorCont"><img class="indikator"
+  src="/styly/office//status/new.png"
+  alt="o"
+  title="Blog" /></div>
+<div class="polozkaCont"><a class="polozka"
+  title="York"
+  href="http://www.d20.cz/blog/sirien/52361.i4.html#i4"> Sirienův blogček: O neexistenci postojů (stances) (7)</a></div>
+<div class="break"></div>
+</div>
+</div>
+  <div class="panelNovinekPolozkaCont">
+<div class="panelNovinekPolozka">
+<div class="indikatorCont"><img class="indikator"
+  src="/styly/office//status/new.png"
+  alt="o"
+  title="Diskuze" /></div>
+<div class="polozkaCont"><a class="polozka"
+  title="Winnie"
+  href="http://www.d20.cz/diskuze/stripky-diskuze/14371.i4764.html#i4764"> Něco pro zasmání</a></div>
+<div class="break"></div>
+</div>
+</div>
+  <div class="panelNovinekPolozkaCont">
+<div class="panelNovinekPolozka">
+<div class="indikatorCont"><img class="indikator"
+  src="/styly/office//status/visited.png"
+  alt="x"
+  title="Diskuze" /></div>
+<div class="polozkaCont"><a class="polozka"
+  title="Dukolm"
+  href="http://www.d20.cz/diskuze/kultura-diskuze/50495.html"> K: Kostky jsou vrženy…</a></div>
+<div class="break"></div>
+</div>
+</div>
+  <div class="panelNovinekPolozkaCont">
+<div class="panelNovinekPolozka">
+<div class="indikatorCont"><img class="indikator"
+  src="/styly/office//status/new.png"
+  alt="o"
+  title="Diskuze" /></div>
+<div class="polozkaCont"><a class="polozka"
+  title="sirien"
+  href="http://www.d20.cz/diskuze/stripky-diskuze/51457.i249.html#i249"> Deskovky do hospody (15)</a></div>
+<div class="break"></div>
+</div>
+</div>
+  <div class="panelNovinekPolozkaCont">
+<div class="panelNovinekPolozka">
+<div class="indikatorCont"><img class="indikator"
+  src="/styly/office//status/new.png"
+  alt="o"
+  title="Diskuze" /></div>
+<div class="polozkaCont"><a class="polozka"
+  title="sirien"
+  href="http://www.d20.cz/diskuze/kultura-diskuze/52357.html"> Apocalypse World (101)</a></div>
+<div class="break"></div>
+</div>
+</div>
+  <div class="panelNovinekPolozkaCont">
+<div class="panelNovinekPolozka">
+<div class="indikatorCont"><img class="indikator"
+  src="/styly/office//status/visited.png"
+  alt="x"
+  title="Diskuze" /></div>
+<div class="polozkaCont"><a class="polozka"
+  title="Šaman"
+  href="http://www.d20.cz/diskuze/kultura-diskuze/16842.html"> Filmy fantastiky</a></div>
+<div class="break"></div>
+</div>
+</div>
+  <div class="pubDate">Starší</div><div class="panelNovinekPolozkaCont">
+<div class="panelNovinekPolozka">
+<div class="indikatorCont"><img class="indikator"
+  src="/styly/office//status/visited.png"
+  alt="x"
+  title="Diskuze" /></div>
+<div class="polozkaCont"><a class="polozka"
+  title="Dif Der"
+  href="http://www.d20.cz/diskuze/kultura-diskuze/51590.html"> Dungeons &amp; Dragons 5e (II)</a></div>
+<div class="break"></div>
+</div>
+</div>
+  <div class="panelNovinekPolozkaCont">
+<div class="panelNovinekPolozka">
+<div class="indikatorCont"><img class="indikator"
+  src="/styly/office//status/visited.png"
+  alt="x"
+  title="Diskuze" /></div>
+<div class="polozkaCont"><a class="polozka"
+  title="Zarahel"
+  href="http://www.d20.cz/diskuze/kultura-diskuze/51679.html"> Odchod z WotC</a></div>
+<div class="break"></div>
+</div>
+</div>
+  <div class="panelNovinekPolozkaCont">
+<div class="panelNovinekPolozka">
+<div class="indikatorCont"><img class="indikator"
+  src="/styly/office//status/visited.png"
+  alt="x"
+  title="Diskuze" /></div>
+<div class="polozkaCont"><a class="polozka"
+  title="York"
+  href="http://www.d20.cz/diskuze/kultura-diskuze/52356.html"> Gamecon 2020</a></div>
+<div class="break"></div>
+</div>
+</div>
+  <div class="panelNovinekPolozkaCont">
+<div class="panelNovinekPolozka">
+<div class="indikatorCont"><img class="indikator"
+  src="/styly/office//status/new.png"
+  alt="o"
+  title="Diskuze" /></div>
+<div class="polozkaCont"><a class="polozka"
+  title="sirien"
+  href="http://www.d20.cz/diskuze/kultura-diskuze/52330.i317.html#i317"> K: [Překlad] Apocalypse World (46)</a></div>
+<div class="break"></div>
+</div>
+</div>
+  <div class="panelNovinekPolozkaCont">
+<div class="panelNovinekPolozka">
+<div class="indikatorCont"><img class="indikator"
+  src="/styly/office//status/new.png"
+  alt="o"
+  title="Diskuze" /></div>
+<div class="polozkaCont"><a class="polozka"
+  title="Aegnor"
+  href="http://www.d20.cz/diskuze/kultura-diskuze/51780.i2743.html#i2743"> [Překlad] Dungeons &amp; Dragons 5e (64)</a></div>
+<div class="break"></div>
+</div>
+</div>
+  <div class="panelNovinekPolozkaCont">
+<div class="panelNovinekPolozka">
+<div class="indikatorCont"><img class="indikator"
+  src="/styly/office//status/visited.png"
+  alt="x"
+  title="Diskuze" /></div>
+<div class="polozkaCont"><a class="polozka"
+  title="Naoki"
+  href="http://www.d20.cz/skupina/214/diskuze/52276.html"> Jeskyně a draci - příprava pravidel</a></div>
+<div class="break"></div>
+</div>
+</div>
+  <div class="panelNovinekPolozkaCont">
+<div class="panelNovinekPolozka">
+<div class="indikatorCont"><img class="indikator"
+  src="/styly/office//status/new.png"
+  alt="o"
+  title="Blog" /></div>
+<div class="polozkaCont"><a class="polozka"
+  title="ShadoWWW"
+  href="http://www.d20.cz/blog/ShadoWWW/52337.i37.html#i37"> Stíny nad Brnem (12)</a></div>
+<div class="break"></div>
+</div>
+</div>
+  <div class="panelNovinekPolozkaCont">
+<div class="panelNovinekPolozka">
+<div class="indikatorCont"><img class="indikator"
+  src="/styly/office//status/new.png"
+  alt="o"
+  title="Diskuze" /></div>
+<div class="polozkaCont"><a class="polozka"
+  title="sirien"
+  href="http://www.d20.cz/diskuze/tipy-diskuze/52163.i2.html#i2"> K: RPG Scénáristika 21: Do tance!</a></div>
+<div class="break"></div>
+</div>
+</div>
+  <div class="panelNovinekPolozkaCont">
+<div class="panelNovinekPolozka">
+<div class="indikatorCont"><img class="indikator"
+  src="/styly/office//status/visited.png"
+  alt="x"
+  title="Diskuze" /></div>
+<div class="polozkaCont"><a class="polozka"
+  title="ShadoWWW"
+  href="http://www.d20.cz/diskuze/stripky-diskuze/52257.html"> K: InDesign friendly překlady </a></div>
+<div class="break"></div>
+</div>
+</div>
+  <div class="panelNovinekPolozkaCont">
+<div class="panelNovinekPolozka">
+<div class="indikatorCont"><img class="indikator"
+  src="/styly/office//status/visited.png"
+  alt="x"
+  title="Diskuze" /></div>
+<div class="polozkaCont"><a class="polozka"
+  title="ShadoWWW"
+  href="http://www.d20.cz/diskuze/kultura-diskuze/52074.html"> Pathfinder 2e</a></div>
+<div class="break"></div>
+</div>
+</div>
+  <div class="panelNovinekPolozkaCont">
+<div class="panelNovinekPolozka">
+<div class="indikatorCont"><img class="indikator"
+  src="/styly/office//status/new.png"
+  alt="o"
+  title="Diskuze" /></div>
+<div class="polozkaCont"><a class="polozka"
+  title="sirien"
+  href="http://www.d20.cz/diskuze/tipy-diskuze/51760.i64.html#i64"> K: RPG scénáristika 5: Do boje!</a></div>
+<div class="break"></div>
+</div>
+</div>
+  <div class="panelNovinekPolozkaCont">
+<div class="panelNovinekPolozka">
+<div class="indikatorCont"><img class="indikator"
+  src="/styly/office//status/visited.png"
+  alt="x"
+  title="Blog" /></div>
+<div class="polozkaCont"><a class="polozka"
+  title="sirien"
+  href="http://www.d20.cz/blog/sirien/52177.i0.html#i0"> Sirienův blogček: filmové analýzy</a></div>
+<div class="break"></div>
+</div>
+</div>
+  <div class="panelNovinekPolozkaCont">
+<div class="panelNovinekPolozka">
+<div class="indikatorCont"><img class="indikator"
+  src="/styly/office//status/visited.png"
+  alt="x"
+  title="Diskuze" /></div>
+<div class="polozkaCont"><a class="polozka"
+  title="Xeth"
+  href="http://www.d20.cz/diskuze/kultura-diskuze/44736.html"> Seriály fantastiky</a></div>
+<div class="break"></div>
+</div>
+</div>
+  <div class="panelNovinekPolozkaCont">
+<div class="panelNovinekPolozka">
+<div class="indikatorCont"><img class="indikator"
+  src="/styly/office//status/visited.png"
+  alt="x"
+  title="Diskuze" /></div>
+<div class="polozkaCont"><a class="polozka"
+  title="Taliesin Lovecraft"
+  href="http://www.d20.cz/diskuze/stripky-diskuze/52222.html"> K: Jak psát článek na d20?</a></div>
+<div class="break"></div>
+</div>
+</div>
+  </div>
+
+<div class="ajaxNavigace">1 až 20 z 68 <a href="#"
+  onclick="obj = new MyAjax; obj.SendRequestToElement('/moduly/ajax/panelRssNovinky.php?obsah=novinky&amp;limit=20&amp;deleni=N&amp;pozice=20','mainPagePanelNovinekVypis'); return false;">
+<img src="/styly/office//prikazy/vpred.png" alt="&gt;" /> </a> <!-- <a href="#"
+  onclick="obj = new MyAjax; obj.SendRequestToElement('/moduly/ajax/panelRssNovinky.php?obsah=novinky&amp;limit=20&amp;deleni=A&amp;pozice=48','mainPagePanelNovinekVypis'); return false;">
+<img src="/styly/office//prikazy/posledni.png" alt="&gt;&lt" /> </a>--> </div>
+
+</div>
+</div>
+<div class="panelNovinekBottom"></div>
+<div class="panelNovinekTop"></div>
+<div class="panelNovinekCont">
+<div class="panelNovinek">
+<div class="pubDate">14:05</div><div class="panelNovinekPolozkaCont">
+<div class="panelNovinekPolozka">
+<div class="indikatorCont"><img class="indikator"
+  src="/styly/office//status/visited.png" alt="x" title="Generátor náhodných předmětů"/></div>
+<div class="polozkaCont"><a
+  class="polozka"
+  href="http://www.d20.cz/clanky/generator-nahodnych-predmetu.html">
+  Generátor náhodných předmětů</a></div>
+<div class="break"></div>
+</div>
+</div>
+    </div>
+</div>
+<div class="panelNovinekBottom"></div></div>
+<div class="panelNovinekTop"></div>
+<div class="panelNovinekCont">
+<div class="panelNovinek">
+
+  <div class="columnCaption">Podobné články</div>
+    </div>
+  </div>
+<div class="panelNovinekBottom"></div>
+
+  </div>
+  </div>
+
+<div class="leftColumnBottom"></div>
+<div class="break"></div>
+
+
+</div><div class="break"></div>
+</div>
+</div>
+</div>
+
+
+
+<div id="pageBottomBoxCont">
+<div id="pageBottomBox"><div class="boxItemBottom"></div>
+<div class="boxItemCont boxItem1">
+<div class="boxItem">
+<div class="item">Věděli jste, že...</div>
+<div class="itemDesc">Na d20.cz můžete mít svůj vlastní blog. Pokud chcete napsat o nečem, co alespoň vzdáleně souvisí s RPG, můžete k tomu využít našeho serveru. Tak proč chodit jinam? <a href="http://www.d20.cz/komunita/blogy/"> &gt;&gt; více
+&lt;&lt;</a> </div>
+  </div>
+</div>
+<div class="boxItemBottom"></div>
+<div class="boxItemBottom"></div>
+<div class="boxItemCont boxItem2">
+<div class="boxItem">
+<div class="item">Jak se chovat v diskuzích</div>
+<div class="itemDesc">Přehled pravidel pro ty, kteří k životu pravidla potřebují. Pokud se umíte slušně chovat, číst to nemusíte. <a href="http://www.d20.cz/clanky/stripky/about-faq-a-pravidla.page3.html"> &gt;&gt; více
+&lt;&lt;</a> </div>
+  </div>
+</div>
+<div class="boxItemBottom"></div>
+<div class="boxItemBottom"></div>
+<div class="boxItemCont boxItem3">
+<div class="boxItem">
+<div class="item">Formátování článků</div>
+<div class="itemDesc">Stručné shrnutí formátovacích značek zdejších článků, diskuzí, blogů a vůbec všeho. Základní životní nutnost. <a href="http://www.d20.cz/clanky/stripky/formatovani.html"> &gt;&gt; více
+&lt;&lt;</a> </div>
+  </div>
+</div>
+<div class="boxItemBottom"></div>
+<div class="break"></div>
+</div>
+</div>
+
+<div id="pageFootCont">
+<div id="pageFoot"><span class="separator separatorFirst">|</span><a href="/stranky/par-slov-o-nas.html">O nás</a><span class="separator">|</span><a href="/clanky/1/131/185/faq.html">Časté otázky</a><span class="separator">|</span><a href="/diskuze/o-strankach/9876.html">Kniha návštěv</a><span class="separator">|</span><a href="/stranky/1659.html">Autorská práva</a><span class="separator separatorLast">|</span>
+<div class="break"></div>
+</div>
+</div>
+<div class="break"></div>
+<div id="dolniCastStranky"></div>
+<div class="break"></div>
+ <img src="http://www.sun.d20.cz/session.php?sid=7fe5b8c04e6ee003806685bafacd9d3b" /> <img src="http://frealms.sun.d20.cz/session.php?sid=7fe5b8c04e6ee003806685bafacd9d3b" /> <img src="http://icaenel.sun.d20.cz/session.php?sid=7fe5b8c04e6ee003806685bafacd9d3b" /> <img src="http://dnd.sun.d20.cz/session.php?sid=7fe5b8c04e6ee003806685bafacd9d3b" /> <img src="http://ravenloft.sun.d20.cz/session.php?sid=7fe5b8c04e6ee003806685bafacd9d3b" /> <img src="http://dragonlance.sun.d20.cz/session.php?sid=7fe5b8c04e6ee003806685bafacd9d3b" /> <img src="http://akce.sun.d20.cz/session.php?sid=7fe5b8c04e6ee003806685bafacd9d3b" /> <img src="http://icefire.sun.d20.cz/session.php?sid=7fe5b8c04e6ee003806685bafacd9d3b" /> <img src="http://darksun.sun.d20.cz/session.php?sid=7fe5b8c04e6ee003806685bafacd9d3b" /> <img src="http://arda.sun.d20.cz/session.php?sid=7fe5b8c04e6ee003806685bafacd9d3b" /> <img src="http://allmir.sun.d20.cz/session.php?sid=7fe5b8c04e6ee003806685bafacd9d3b" /> <img src="http://cph.sun.d20.cz/session.php?sid=7fe5b8c04e6ee003806685bafacd9d3b" /> <img src="http://cadwallon.sun.d20.cz/session.php?sid=7fe5b8c04e6ee003806685bafacd9d3b" /><div style="display: none;">ČAS 0.33475804328918 secREMOTE_IP: 126.44.217.184 <a href="http://www.toplist.cz/stat/295781"><script
+  language="JavaScript" type="text/javascript">
+<!--
+document.write ('<img src="http://toplist.cz/count.asp?id=295781&amp;logo=s&amp;http='+escape(document.referrer)+'&amp;wi='+escape(window.screen.width)+'&amp;he='+escape(window.screen.height)+'&amp;cd='+escape(window.screen.colorDepth)+'&amp;t='+escape(document.title)+'" width="14" height="14" border=0 alt="TOPlist" />');
+//--></script></a>
+<noscript>
+<img src="http://toplist.cz/count.asp?id=295781&amp;logo=s" />
+</noscript>
+
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-1810151-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<script>
+const toggleHidden = () => {
+  const divList = document.querySelectorAll('.predmet');
+  const randIndex = Math.floor(Math.random() * divList.length);
+  divList.forEach((divEl) => {
+    divEl.style.display = "none";
+  });
+  divList[randIndex].style.display = "block";
+}
+
+window.onload = toggleHidden()
+</script>
+
+</body>
+</html>
